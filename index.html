@@ -3,98 +3,151 @@
     <head>
         <meta charset="Utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ESISSATECH</title>
+        <title>ESISSATECH | Facturacion Electronica con Esissatech</title>
+        <meta name="description" content="Facturacion electronica con Esissatech">
+   
+    <!-- === ESTILOS GENERALES === -->
+
+    <style>
+        /* === ESTILOS GENERALES ===*/
+        
+        body {
+            font-family:Arial, Helvetica, sans-serif; /* Tipod e letra */
+            margin: 1; /* Con margen exterior al navegador */
+            background: #f5f7fa; /* Fondo gris claro */ 
+            color: #333; /* Texto gris oscuro */
+            line-height: 1.6; /* Espacio entre lineas */
+        }
+
+        header {
+            background: #004aad; /* Fondo azul */
+            color: white; /* Texto blanco */
+            text-align: center; /* Centrar texto */
+            padding:20px 10px; /* Espacios internos*/
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 25px; 
+            font-weight: bold;  
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+        }
+
+    </style>
+   
+   
+   
+   
     </head>
 
-    <body>
-        <!--ENCABEZADO-->
-        <h1>ESISSATECH</h1>
-        <h3>Sistema para Restaurante y Negocio</h3>
-        <hr>
+<body>
+        <header>
+         <!--ENCABEZADO-->
+          <h1>ESISSATECH</h1>
+          <h3>Sistema para Restaurante y Negocio</h3>
+          <hr>
 
-        <!--MENÚ DE NAVEGACIÓN-->
-        <nav>
-        <h2>Menú Principal</h2> 
-        <a href="#inicio">Inicio</a> |
-        <a href="#nosotros">Nosotros</a> |
-        <a href="#servicios">Servicios</a> |
-        <a href="#galeria">Galeria</a> |
-        <a href="#contacto">Contacto</a>
-        </nav>
-        <hr style="border: 2px solid blue; width: 100%;">
+         <!--MENÚ DE NAVEGACIÓN-->
+            <nav>
+             <h2>Menú Principal</h2> 
+              <a href="#inicio">Inicio</a> |
+              <a href="#nosotros">Nosotros</a> |
+              <a href="#servicios">Servicios</a> |
+              <a href="#galeria">Galeria</a> |
+              <a href="#contacto">Contacto</a>
+            </nav>
+            <hr style="border: 2px solid blue; width: 100%;">
+        </header>
+
+        <!--CONTENIDO PRINCIPAL-->
+        <main>
 
         <!--SECCIÓN INICIO-->
-        <h2 id="inicio">Inicio</h2>
-        <p>Bienvenido a <b>ESISSATECH</b>.Somos una empresa dedicada al desarrollo de sistemas informáticos, para restaurantes, 
-            pollerías y negocio de comida. Nuestro objetivo es optimizar tu negocio con tecnología moderna y eficiente.</p>
+        <section id="inicio">
+            <h2>Inicio</h2>
+             <p>Bienvenido a <strong>ESISSATECH</strong>.Somos una empresa dedicada al desarrollo de sistemas informáticos, para restaurantes, 
+              pollerías y negocio de comida. Nuestro objetivo es optimizar tu negocio con tecnología moderna y eficiente.</p>
+        </section>
 
-        <!--SECCION SERVICIOS-->
-        <h2 id="nosotros">Nosotros</h2>
-        <p><b>ESISSATECH</b></p> nace en Ayacucho, con la misión de ofrecer soluciones tecnológicas a los emprendedores y empresas del rubro gastronómico. Contamos con experiencia en la implementación de sistemas de venta, control de insumos y facturación electrónica.</p>
+        <!--SECCION NOSOTROS-->
+        <section id="nosotros">
+            <h2>Nosotros</h2>
+            <article>
+             <p><strong>ESISSATECH</strong> nace en Ayacucho, con la misión de ofrecer soluciones tecnológicas a los emprendedores y empresas del rubro gastronómico. Contamos con experiencia en la implementación de sistemas de venta, control de insumos y facturación electrónica.</p>
+            </article>
+        </section>
 
         <!--SECCIÓN SERVICIOS-->
-        <h2 id="servicios">Nuestros Servicios</h2>
-        <ul>
-            <li>Sistemas de Ventas para restaurantes</li>
-            <li>Control de Insumos y Recetas</li>
-            <li>Facturación Electrónica SUNAT</li>
-            <li>Reportes y Estadísticas</li>
-            <li>Soporte y Asistencia Técnica</li>
-        </ul>
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Sistemas de Ventas para restaurantes</li>
+                <li>Control de Insumos y Recetas</li>
+                <li>Facturación Electrónica SUNAT</li>
+                <li>Reportes y Estadísticas</li>
+                <li>Soporte y Asistencia Técnica</li>
+            </ul>
+        </section>
 
         <!--SECCIÓN GALERIA-->
-        <h2 id="galeria">Galería de Videos</id>
-        <p>A continuaciíon, te mostramos algunos videos de demostracíon del sistema</p>
+        <section id="galeria">
+            <h2>Galería de Videos</id>
+            <p>A continuaciíon, te mostramos algunos videos de demostracíon del sistema:</p>
 
-        <h3>Apertura y venta</h3>
-        <table>
-            <tr>
-                <td>
-                    <video width="300" controls>
-                        <source src="PV.mp4" type="video/mp4">
-                        Tu navegador no soporta este formato de video
-                    </video>
-                </td>
-            </tr>
-        </table>
+            <figure>
+              <video width="300" controls>
+                <source src="PV.mp4" type="video/mp4">
+                Tu navegador no soporta este formato de video
+                </video>
+                <figcaption>Apertura y Venta</figcaption>
+            </figure>
 
-        <h3>Reportes</h3>
-        <table>
-            <tr>
-                <td>
-                    <video width="300" controls>
-                        <source src="REPORTES.mp4" type="video/mp4">
-                        Tu navegador no soporta este formato de video
-                    </video>
-                </td>
-            </tr>
-        </table>
+            <figure>
+              <video width="300" controls>
+                 <source src="REPORTES.mp4" type="video/mp4">
+                 Tu navegador no soporta este formato de video
+             </video>
+             <figcaption>Reporte</figcaption>
+            </figure>
 
-        <h3>Sistema para Restaurantes</h3>
-        <table>
-            <tr>
-                <td>
-                    <video width="300" controls>
-                        <source src="SISTEMA PARA RESTAURANTE.mp4" type="video/mp4">
-                        Tu navegador no soporta este formato
-                    </video>
-
-                </td>
-            </tr>
-        </table>
+            <figure>
+              <video width="300" controls>
+                <source src="SISTEMA PARA RESTAURANTE.mp4" type="video/mp4">
+                Tu navegador no soporta este formato
+              </video>
+               <figcaption>Sistema para Restaurante</figcaption>
+            </figure>
+        </section>
 
         <!--SECCIÓN CONTACTO-->
-        <h2 id="contacto">Contáctanos</h2>
-        <p>Puedes comunicarte con nosotros a través de los siguientes medios:</p>
-        <p>
-            Correo: <a href="milto:esissatech@gmail.com">esissatech@gmail.com</a><br>
-            WhatsApp: <a href="http://wa.me/51990903224">+51 990903224</a><br>
-            Dirección: Ayacucho - Perú
-        </p>
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>Puedes comunicarte con nosotros a través de los siguientes medios:</p>
+        
+            <address>
+                📧 Correo: <a href="mailto:esissatech@gmail.com">esissatech@gmail.com</a><br>
+                💬 WhatsApp: <a href="http://wa.me/51990903224">+51 990903224</a><br>
+                📍 Dirección: Ayacucho - Perú
+            </address>
+        </section>
 
-    </body>
+    </main>
+    
         <!--PIE DE PAGINA-->
-        <br>
-        <p><small>2025 ESISSATECH - Todos los derechos reservados.</small></p>
-
+        <footer>
+            <br>
+            <p><small>© 2025 ESISSATECH - Todos los derechos reservados.</small></p>
+        </footer>
+</body>
 </html>
