@@ -19,32 +19,64 @@
             line-height: 1.6; /* Espacio entre lineas */
         }
 
+        /* == Encabezado == */
+
         header {
             background: #004aad; /* Fondo azul */
             color: white; /* Texto blanco */
             text-align: center; /* Centrar texto */
             padding: 10px 0px; /* Espacios internos*/
             
+             }
+
+        .logo-titulo {
+            display: flex;
+            flex-direction: column; /* Logo arriba texto a abajo*/
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
         }
+
+        .logo-titulo img {
+            width: 120px;
+            height: 5;
+        }
+
 
         header h1 {
             margin: 5px 0 0 0;
-            font-size: 28px; /* tamaño del titulo */
+            font-size: 32px; /* tamaño del titulo */
         }
 
         header h3 {
-            margin: 2px 0 10px 0;
+            margin: 5px 0 15px;
+            font-weight: normal;
+        }
+        
+        header hr {
+            width: 60%;
+            margin: 10px auto;
+            border: 2px solid #08d5f0;
+        }
+
+        /* == MENU DE NAVEGCIÓN == */
+
+        nav {
+            background: #003a88;
+            padding: 12px;
+            text-align: center;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 25px; 
+            margin: 0 18px; 
             font-weight: bold;  
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #08d5f0;
         }
         
         main {
@@ -129,9 +161,15 @@
 <body>
         <header>
          <!--ENCABEZADO-->
-          <h1>ESISSATECH</h1>
-          <h3>Sistema para Restaurante y Negocio</h3>
-          <hr>
+          <div class="logo-titulo">
+             <img src="logo.png" alt="Logo de ESISSATECH">
+               <div>
+                  <h1>ESISSATECH</h1>
+                  <h3>Sistema para Restaurante y Negocio</h3>
+                  <hr>
+               </div>
+          </div>   
+
 
          <!--MENÚ DE NAVEGACIÓN-->
             <nav>
