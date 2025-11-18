@@ -168,8 +168,8 @@
         /*== GALERÍA DE VIDEOS EN 3 COLUMNAS ==*/
         .videos-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            gap: 25px; /* separacion entre videos */
             margin-top: 20px;
         }
 
@@ -178,12 +178,31 @@
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 08);
+            text-align: center;
         }
 
         .videos-grid video {
-            width: 100%;
+            width: 100%; /* Se ajusta automaticamente */
+            max-width: 320px;
             border-radius: 0 0 10px rgba(0,0,0,0.8);
+            border: 2px solid #004aad;
+
         }
+
+        /* Responsive para tablet (2 columnas) */
+        @media(max-width: 900px) {
+            .videos-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 600px) {
+            .videos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        
 
     </style>
    
