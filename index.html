@@ -25,7 +25,7 @@
             background: #f5f7fa; /* Fondo gris claro */ 
             color: #333; /* Texto gris oscuro */
             line-height: 1.6; /* Espacio entre lineas */
-            padding-top: 120px; /* Altura del header + menu */
+            padding-top: 0; /* Altura del header + menu */
         }
 
         /* == Encabezado FIJO == */
@@ -223,6 +223,13 @@
             html {
                 scroll-padding-top: 160px;
             }
+
+        @media (min-width:900px) {
+            html {
+                scroll-padding-top: 120px;
+            }
+        }
+            
         }
 
         @media(max-width: 900px) {
